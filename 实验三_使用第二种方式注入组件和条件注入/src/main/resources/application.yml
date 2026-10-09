@@ -1,0 +1,18 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /order-system
+
+service:
+  impl: memory
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:orderdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
